@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术支持 - 李知本时间管理</title>
+    <style>
+        :root {
+            --bg-color: #000000;
+            --card-bg: #1c1c1e;
+            --text-primary: #ffffff;
+            --text-secondary: #8e8e93;
+            --accent-color: #ffcc00; /* App内的金色/橙色 */
+            --accent-gradient: linear-gradient(135deg, #ffcc00, #ff9500);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-top: 40px;
+        }
+
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            background: var(--card-bg);
+            border-radius: 22px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            border: 1px solid #333;
+            box-shadow: 0 10px 30px rgba(255, 165, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 18px;
+        }
+
+        /* FAQ Section */
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 12px;
+        }
+
+        .faq-item {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-2px);
+        }
+
+        details {
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        summary {
+            font-weight: 600;
+            font-size: 17px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 24px;
+            color: var(--accent-color);
+            font-weight: 300;
+        }
+
+        details[open] summary::after {
+            content: '-';
+        }
+
+        .answer {
+            margin-top: 15px;
+            color: #d1d1d6;
+            font-size: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Contact Button */
+        .contact-section {
+            text-align: center;
+            margin-top: 60px;
+            padding: 40px;
+            background: #111;
+            border-radius: 20px;
+            border: 1px solid #333;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: var(--accent-gradient);
+            color: #000;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 700;
+            text-decoration: none;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 12px;
+            padding-bottom: 40px;
+        }
+
+        a { color: var(--accent-color); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="app-icon">⏳</div>
+        <h1>李知本时间管理</h1>
+        <div class="subtitle">技术支持与帮助中心</div>
+    </header>
+
+    <div class="faq-section">
+        <div class="section-title">购买与试用</div>
+        
+        <div class="faq-item">
+            <details>
+                <summary>这是一款免费软件吗？试用期结束后会自动扣费吗？</summary>
+                <div class="answer">
+                    <p><strong>请放心，我们绝不自动扣费。</strong></p>
+                    <p>App 采用“先体验，后买断”的模式。新用户安装后，会自动获得 <strong>30天 Pro 尊享版体验期</strong>。在此期间，您可以免费使用所有高级功能。</p>
+                    <p>试用期结束后，App 会自动降级为基础版，您无需执行任何取消订阅的操作。如果您喜欢我们的 App，可以随时在“设置”页面购买永久版（Lifetime）解锁。</p>
+                </div>
+            </details>
+        </div>
+
+        <div class="faq-item">
+            <details>
+                <summary>如果我换了手机，或者在 Mac 上使用，需要重新购买吗？</summary>
+                <div class="answer">
+                    不需要。我们支持 <strong>Apple 通用购买 (Universal Purchase)</strong>。只要您使用购买时的同一个 Apple ID 登录，即可在 iPhone、iPad 和 Mac 上免费恢复 Pro 资格。请在 App 的“设置”或付费页面点击“恢复购买”按钮。
+                </div>
+            </details>
+        </div>
+    </div>
+
+    <div class="faq-section" style="margin-top: 40px;">
+        <div class="section-title">数据安全与同步</div>
+
+        <div class="faq-item">
+            <details>
+                <summary>如果我不小心删除了 App 或 iCloud 数据，我的记录会丢失吗？</summary>
+                <div class="answer">
+                    <p>我们构建了<strong>多重容灾机制</strong>来保护您的数据：</p>
+                    <ul>
+                        <li><strong>本地/云端双重备份</strong>：即使 iCloud 出现故障或被误删，只要 App 还在手机上，启动时会自动从本地镜像恢复数据。</li>
+                        <li><strong>全量备份功能</strong>：建议您定期在“设置 -> 数据管理”中点击“导出全量备份”，将 .json 文件保存在“文件”App 中。这是终极安全防线，即使卸载 App，也能通过该文件一键恢复所有记录和表格。</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+
+        <div class="faq-item">
+            <details>
+                <summary>iCloud 同步似乎没有生效？</summary>
+                <div class="answer">
+                    <p>请尝试以下步骤：</p>
+                    <ol>
+                        <li>检查系统设置中，是否允许本 App 使用 iCloud 云盘。</li>
+                        <li>确保您的设备已连接网络，并且 iCloud 空间充足。</li>
+                        <li>在 App 主页下拉刷新，或在“设置 -> 数据管理”中查看同步状态。</li>
+                        <li>如果是新安装的设备，请稍等片刻，App 会自动从云端拉取数据。</li>
+                    </ol>
+                </div>
+            </details>
+        </div>
+    </div>
+
+    <div class="faq-section" style="margin-top: 40px;">
+        <div class="section-title">功能使用</div>
+
+        <div class="faq-item">
+            <details>
+                <summary>免费版和 Pro 版有什么区别？</summary>
+                <div class="answer">
+                    <p><strong>基础版（免费）：</strong>支持核心计时功能、创建最多 2 个档案表格、查看最近 30 天记录。</p>
+                    <p><strong>Pro 版（付费）：</strong>解锁无限数量表格、查看所有历史记录、全套精美计时器皮肤、高级统计图表以及无水印图片导出。</p>
+                </div>
+            </details>
+        </div>
+
+        <div class="faq-item">
+            <details>
+                <summary>如何找回被修改或删除的表格数据？</summary>
+                <div class="answer">
+                    我们内置了<strong>时光机</strong>功能。在“档案库”列表中，长按任意表格，选择“历史版本”，即可查看并回滚到最近 30 次修改中的任意状态。此外，在“数据管理”中还提供了全量数据的系统快照恢复。
+                </div>
+            </details>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h2>仍有疑问？</h2>
+        <p style="color: #888; margin-bottom: 20px;">如果您遇到 Bug 或有功能建议，欢迎随时联系开发者。</p>
+        <!-- 请将下方的邮箱地址修改为您自己的 -->
+        <a href="mailto:weightmatrix@163.com" class="contact-btn">发送邮件联系我们</a>
+    </div>
+
+    <div class="faq-section" style="margin-top: 40px;">
+        <div class="section-title" style="font-size: 18px; border-left: none; padding-left: 0;">隐私政策简述</div>
+        <div class="answer" style="border: none;">
+            <p>我们非常重视您的隐私：</p>
+            <ul>
+                <li><strong>不收集数据：</strong>您的所有时间记录、表格文件均存储在您的设备本地及您的 iCloud 个人账户中。</li>
+                <li><strong>无第三方追踪：</strong>我们不使用任何第三方分析工具或广告 SDK。</li>
+                <li><strong>完全掌控：</strong>您可以随时在 App 内彻底清空或导出您的所有数据。</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 李知本时间管理 (TimeTracker). All rights reserved.<br>
+        Designed for Efficiency & Privacy.
+    </footer>
+</div>
+
+</body>
+</html>
